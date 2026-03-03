@@ -39,12 +39,16 @@ export interface Faculty {
 }
 
 export let facultyData: Faculty[] = [];
-const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
 
 export const fetchFacultyData = async () => {
+  // Don't fetch during SSR/build time, only on client side
+  if (typeof window === 'undefined') {
+    return [];
+  }
+  
   try {
-    const response = await fetch(`${baseUrl}/api/faculty`, {
-      cache: "no-store" // ensures fresh data if needed
+    const response = await fetch(`/api/faculty`, {
+      cache: "no-store" // Client-side fetch, no caching issues
     });
 
     if (!response.ok) throw new Error("Failed to fetch faculty data");
@@ -128,10 +132,6 @@ const transformFacultyData = (rawFaculty: any[]): Faculty[] => {
     };
   });
 };
-
-(async () => {
-  await fetchFacultyData();
-})();
 
 export const researchAreas = [
   { name: "All Areas", value: "all", icon: null },
