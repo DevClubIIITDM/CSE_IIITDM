@@ -132,6 +132,7 @@ export const positions = [
   { name: "Associate Professor", value: "Associate Professor" },
   { name: "Assistant Professor", value: "Assistant Professor" },
   { name: "Adjunct Faculty", value: "Adjunct Faculty" },
+  { name: "Professor of Practice", value: "Professor of Practice" },
 ];
 
 export const getIconByKey = (key: string | undefined | null, className = "w-5 h-5") => {
