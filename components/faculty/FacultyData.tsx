@@ -39,10 +39,11 @@ export interface Faculty {
 }
 
 export let facultyData: Faculty[] = [];
+const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
 
 export const fetchFacultyData = async () => {
   try {
-    const response = await fetch("/api/faculty", {
+    const response = await fetch(`${baseUrl}/api/faculty`, {
       cache: "no-store" // ensures fresh data if needed
     });
 
