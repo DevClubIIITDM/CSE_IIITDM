@@ -40,21 +40,40 @@ export interface Faculty {
 
 export let facultyData: Faculty[] = [];
 
-// Fetch and transform faculty data
 export const fetchFacultyData = async () => {
   try {
-    const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
-    const response = await fetch(`${baseUrl}/api/faculty`);
+    const response = await fetch("/api/faculty", {
+      cache: "no-store" // ensures fresh data if needed
+    });
+
     if (!response.ok) throw new Error("Failed to fetch faculty data");
+
     const rawData = await response.json();
     if (!rawData.status) throw new Error("API returned error status");
+
     facultyData = transformFacultyData(rawData.faculty || []);
     return facultyData;
+
   } catch (error) {
     console.error("Error fetching faculty data:", error);
     return [];
   }
 };
+// Fetch and transform faculty data
+//export const fetchFacultyData = async () => {
+//  try {
+  //  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
+   // const response = await fetch(`${baseUrl}/api/faculty`);
+   // if (!response.ok) throw new Error("Failed to fetch faculty data");
+   // const rawData = await response.json();
+    //if (!rawData.status) throw new Error("API returned error status");
+    //facultyData = transformFacultyData(rawData.faculty || []);
+    //return facultyData;
+  //} catch (error) {
+    //console.error("Error fetching faculty data:", error);
+    //return [];
+  //}
+//};
 
 const transformFacultyData = (rawFaculty: any[]): Faculty[] => {
   return rawFaculty.map((item: any, index: number) => {
