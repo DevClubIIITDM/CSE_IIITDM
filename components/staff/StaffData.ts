@@ -42,21 +42,23 @@ export const staffData: StaffMember[] = [
     bio: "Mr. Saravana Kumar K is a Technical Superintendent with expertise in network administration and hardware troubleshooting.",
     
   },
+  */
   {
     id: 3,
-    name: "Mr. Aravindan S",
+    name: "Mr. Vignesh S",
     position: "Junior Technical Superintendent",
     department: "Computer Science",
-    email: "aravindan@iiitdm.ac.in",
+    email: "vignesh@iiitdm.ac.in",
     phone: "+91-98765xxxxx",
-    office: "L515 - Digital System Design Lab",
-    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/aravindan.jpeg",
+    office: "L509 - High Performance Computing Lab",
+    //office: "L515 - Digital System Design Lab",
+    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/vignesh.jpeg",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
-    bio: "Mr. Aravindan S is a Junior Technical Superintendent specializing in software support and laboratory management.",
+    bio: "Mr. Vignesh S is a Junior Technical Superintendent specializing in software support, laboratory infrastructure management.",
     
   },
-  */
+  
   {
     id: 4,
     name: "Mr. Aswin A",
@@ -97,6 +99,34 @@ export const staffData: StaffMember[] = [
     linkedin: "https://linkedin.com/",
     github: "https://github.com",
     bio: "Mrs. Kamalieswari A S is a Junior Technician with expertise in database management and technical support.",
+    
+  },
+  {
+    id: 7,
+    name: "Mr. Dipanjan Karmakar",
+    position: "Junior Technician",
+    department: "Computer Science",
+    email: "dipanjan@iiitdm.ac.in",
+    phone: "+91-98765xxxxx",
+    office: "L512-Basic Computing Lab",
+    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/dipanjan.jpeg",
+    linkedin: "https://linkedin.com/",
+    github: "https://github.com",
+    bio: "Mr. Dipanjan Karmakar is a Junior Technician with skills in hardware maintenance and technical support.",
+    
+  },
+  {
+    id: 8,
+    name: "Mr. Anurag K V",
+    position: "Junior Technician",
+    department: "Computer Science",
+    email: "anuragkv@iiitdm.ac.in",
+    phone: "+91-98765xxxxx",
+    office: "L515-Digital System Design Lab",
+    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/anuragkv.jpeg",
+    linkedin: "https://linkedin.com/",
+    github: "https://github.com",
+    bio: "Mr. Anurag K V is a Junior Technician with specializing in electronics laboratory support and equipment maintenance.",
     
   },
 ]
