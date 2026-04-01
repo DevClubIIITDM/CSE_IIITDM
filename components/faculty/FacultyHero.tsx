@@ -28,7 +28,7 @@ export default function FacultyHero() {
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Meet our distinguished faculty members who are leading experts in their fields, dedicated to excellence in
-            teaching, research, and innovation.
+            Teaching, Research and Innovation.
           </p>
         </motion.div>
       </div>

@@ -93,7 +93,7 @@ export default function Footer() {
             <h3 className="text-base font-semibold mb-2 border-b border-blue-400 pb-1">Contact Us</h3>
             <ul className="space-y-2 text-xs">
               <li className="flex items-start">
-                <span>Prof. Sivaselvan B</span>
+                <span>Dr. Noor Mahammad SK</span>
               </li>
               <li className="flex items-start">
                 {/* /* hod name */}
@@ -107,7 +107,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="mr-2 h-4 w-4 text-blue-300" />
                 <a href="tel:+914427476346" className="hover:text-blue-200 transition-colors duration-300">
-                  +91 44 2747 6346
+                  +91 44 2747 6349
                 </a>
               </li>
               <li className="flex items-center">

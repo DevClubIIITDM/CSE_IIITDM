@@ -242,26 +242,26 @@ export default function Home() {
                 <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-[#B0B0B0]/30">
                   <CardHeader className="bg-gradient-to-r from-[#003366] to-[#6495ED]">
                     <CardTitle className="text-2xl font-bold text-white">Intake in CSE Department</CardTitle>
-                    <CardDescription className="text-white/80">Academic Year 2021-2022</CardDescription>
+                    <CardDescription className="text-white/80">Academic Year 2025-2026</CardDescription>
                   </CardHeader>
                   <CardContent className="p-6">
                     <ul className="space-y-4">
                       <IntakeItem
                         icon={<GraduationCap className="w-6 h-6" />}
                         program="B.Tech in CSE"
-                        total={85}
+                        total={97}
                         breakdown={[
-                          { label: "JEE main based", value: 80 },
-                          { label: "DASA", value: 5 },
+                          { label: "JEE main based", value: 85 },
+                          { label: "DASA", value: 12 },
                         ]}
                       />
                       <IntakeItem
                         icon={<Award className="w-6 h-6" />}
                         program="B.Tech in CSE with Major in AI"
-                        total={43}
+                        total={52}
                         breakdown={[
-                          { label: "JEE main based", value: 40 },
-                          { label: "DASA", value: 3 },
+                          { label: "JEE main based", value: 46 },
+                          { label: "DASA", value: 6 },
                         ]}
                       />
                       <IntakeItem
@@ -273,7 +273,19 @@ export default function Home() {
                           { label: "DASA", value: 1 },
                         ]}
                       />
-                      <IntakeItem                        icon={<Code className="w-6 h-6" />}                        program="Dual Degree in CSE"                        total={60}                        breakdown={[                          { label: "JEE based", value: 57 },                          { label: "DASA", value: 3 },                        ]}                      />                      <IntakeItem icon={<Users className="w-6 h-6" />} program="Ph.D" total={3} />
+                      <IntakeItem 
+                      icon={<Code className="w-6 h-6" />}
+                      program="Dual Degree in CSE"
+                      total={74}
+                      breakdown={[
+                          { label: "JEE based", value: 68 },
+                          { label: "DASA", value: 6 },  
+                        ]}
+                      />
+                      <IntakeItem 
+                      icon={<Users className="w-6 h-6" />} 
+                      program="Ph.D" total={3} 
+                      />
                     </ul>
                     <Button
                       variant="outline"
