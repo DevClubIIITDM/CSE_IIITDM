@@ -42,7 +42,7 @@ export const staffData: StaffMember[] = [
     bio: "Mr. Saravana Kumar K is a Technical Superintendent with expertise in network administration and hardware troubleshooting.",
     
   },
-  */
+  
   {
     id: 3,
     name: "Mr. Vignesh S",
@@ -58,6 +58,22 @@ export const staffData: StaffMember[] = [
     bio: "Mr. Vignesh S is a Junior Technical Superintendent specializing in software support, laboratory infrastructure management.",
     
   },
+  */
+   {
+    id: 3,
+    name: "Mr. Aravindan S",
+    position: "Junior Technical Superintendent",
+    department: "Computer Science",
+    email: "aravindan@iiitdm.ac.in",
+    phone: "+91-98765xxxxx",
+    office: "L509 - Intelligent Systems Design Lab",
+    //office: "L515 - Digital System Design Lab",
+    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/aravindan.jpeg",
+    linkedin: "https://linkedin.com",
+    github: "https://github.com",
+    bio: "Mr. Vignesh S is a Junior Technical Superintendent specializing in software support, laboratory infrastructure management.",
+    
+  },
   
   {
     id: 4,
@@ -66,7 +82,7 @@ export const staffData: StaffMember[] = [
     department: "Computer Science",
     email: "aswin@iiitdm.ac.in",
     phone: "+91-98765xxxxx",
-    office: "L509 - High Performance Computing Lab",
+    office: "L509 - Intelligent Systems Designs Lab",
     image: "https://mis.iiitdm.ac.in/Profile/images/Profile/aswina.jpeg",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -87,6 +103,7 @@ export const staffData: StaffMember[] = [
     bio: "Mr. Kamalakannan M is a Junior Technician specializing in electronics laboratory support and equipment maintenance.",
     
   },
+  /*
   {
     id: 6,
     name: "Mrs. Kamalieswari A S",
@@ -101,6 +118,7 @@ export const staffData: StaffMember[] = [
     bio: "Mrs. Kamalieswari A S is a Junior Technician with expertise in database management and technical support.",
     
   },
+  */
   {
     id: 7,
     name: "Mr. Dipanjan Karmakar",
@@ -127,6 +145,20 @@ export const staffData: StaffMember[] = [
     linkedin: "https://linkedin.com/",
     github: "https://github.com",
     bio: "Mr. Anurag K V is a Junior Technician with specializing in electronics laboratory support and equipment maintenance.",
+    
+  },
+  {
+    id: 9,
+    name: "Mr. Manupradeep M",
+    position: "Junior Technician",
+    department: "Computer Science",
+    email: "Manupradeep M",
+    phone: "+91-98765xxxxx",
+    office: "L512-Basic Computing Lab",
+    image: "https://mis.iiitdm.ac.in/Profile/images/Profile/manupradeep.jpeg",
+    linkedin: "https://linkedin.com/",
+    github: "https://github.com",
+    bio: "Mr. Manu Pradeep is a Junior Technician with specializing in electronics laboratory support and equipment maintenance.",
     
   },
 ]
